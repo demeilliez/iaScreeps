@@ -4,10 +4,11 @@ Hello ! Here you can find a little ia for Screeps !
 
 # Feature
 
-Vreep :
+Creep :
 - role harvester
 - role upgrader
 - role manager
+- Spawn systemp
 
 
 # Incoming feature
