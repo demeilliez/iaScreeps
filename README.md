@@ -8,7 +8,7 @@ Creep :
 - role harvester
 - role upgrader
 - role manager
-- Spawn systemp
+- Spawn system
 
 
 # Incoming feature
