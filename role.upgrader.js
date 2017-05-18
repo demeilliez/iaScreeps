@@ -18,7 +18,8 @@ var roleUpgrader = {
             }
         }
         else {
-            var sources              = Game.spawns['NagotoQg'].room.find(FIND_SOURCES);
+            var nameSpawnCreep       = creep.memory.origin;
+            var sources              = Game.spawns[nameSpawnCreep].room.find(FIND_SOURCES);
             if(creep.harvest(sources[1]) != undefined)
             {
                 creep.moveTo(sources[1], {visualizePathStyle: {stroke: '#ffaa00'}});
