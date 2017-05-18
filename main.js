@@ -8,6 +8,10 @@ module.exports.loop = function () {
     //we clean the memory
     memoryClean.run();
 
+
+    //Incoming feature
+    //constructionManager.run();
+
     //we run our roleManager
     roleManager.run();
     
