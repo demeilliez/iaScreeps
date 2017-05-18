@@ -12,23 +12,17 @@ var totalCreep    = nbHarverst + nbUpgrader + nbBuilder;
 //define const max creep
 const totalMax    = 8;
 
-for(var i in Memory.creeps) {
-    if(!Game.creeps[i]) {
-        delete Memory.creeps[i];
-    }
-}
-
 var spawn = {
     run : function(){
     	var percentHarvest  	= (harvest * totalMax)/100;
     	var percentUpgrader 	= (upgrader * totalMax)/100;
     	var percentBuilder      = (builder * totalMax)/100;
 
-    	console.log('total havert   = '+nbHarverst);
+    	console.log('total haverst  = '+nbHarverst);
     	console.log('total upgrader = '+nbUpgrader);
     	console.log('total builder  = '+nbBuilder);
     	//comparison between all of our creep with ratio
-    	if (totalCreep < totalMax) {
+    	if (totalCreep <= totalMax) {
     		if (nbHarverst < percentHarvest)
 	        {
 				var newCreep = Game.spawns['NagotoQg'].createCreep( [WORK, CARRY, CARRY, MOVE], null,{role: 'harvester', origin: 'NagotoQg'});
