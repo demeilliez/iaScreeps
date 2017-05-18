@@ -1,10 +1,12 @@
 var roleManager         = require('role.manager');
 var constructionManager = require('construction.manager');
 var spawn               = require('spawn');
+var memoryClean         = require('memory.clean');
 
 module.exports.loop = function () {
     
-        console.log(JSON.stringify(Game.spawns['NagotoQg'].room.name));
+    //we clean the memory
+    memoryClean.run();
 
     //we run our roleManager
     roleManager.run();
