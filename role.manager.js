@@ -5,13 +5,18 @@ var roleBuilder   = require('role.builder');
 
 var moduleManager = {
 	run : function(){
-		//define nbCreeps at 0
+
 		Memory.nbCreeps   = 0;
 		var needHarvester = 0;
 		var needUpgrader  = 0;
         
-	    //we gave a role for our creeps
-	    for(var name in Game.creeps) {
+	    //we must define the number of creeps we need to upgrade or harvest
+
+
+
+
+
+	    /*for(var name in Game.creeps) {
 	    	Memory.nbCreeps   = Memory.nbCreeps +1;
 	        var creep = Game.creeps[name];
 	        if(creep.memory.role == 'harvester') {
@@ -19,7 +24,7 @@ var moduleManager = {
 	        }else if(creep.memory.role == 'upgrader') {
 	            roleUpgrader.run(creep);
 	        }
-	    }
+	    }*/
 	}
 }
 
