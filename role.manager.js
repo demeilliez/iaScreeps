@@ -6,12 +6,18 @@ var roleBuilder   = require('role.builder');
 var moduleManager = {
 	run : function(){
 
-		Memory.nbCreeps   = 0;
-		var needHarvester = 0;
-		var needUpgrader  = 0;
-        
+		Memory.nbCreeps    = 0;
+		var needHarvester  = 0;
+		var needUpgrader   = 0;
+        var nameSpawnCreep = 'NagotoQg';
 	    //we must define the number of creeps we need to upgrade or harvest
 
+		//Harvest
+
+		//Upgrade
+
+
+		//If we don't need to havest, everyone upgrade
 
 
 
